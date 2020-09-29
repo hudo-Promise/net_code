@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/userinfo/reg" method="post">
+    <div>
+        <lable >用户名</lable>
+        <input type="text" name="username" value="{{ username }}">
+        <span>{{ username_error }}</span>
+    </div>
+        <div>
+        <lable >密码</lable>
+        <input type="text" name="password" value="password">
+            <span>{{ password_error }}</span>
+    </div>
+    </div>
+        <div>
+        <lable >确认密码</lable>
+        <input type="text" name="password2" value="password2">
+            <span>{{ password2_error }}</span>
+    </div>
+        <div>
+        <input type="submit" value="注册">
+    </div>
+</form>
+</body>
+</html>

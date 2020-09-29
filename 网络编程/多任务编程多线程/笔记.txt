@@ -1,0 +1,3 @@
+Pipe 管道
+实现进程间的通信
+from multiprocessing import Pipe
